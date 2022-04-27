@@ -1,0 +1,204 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+header {
+	background: #BBBBBB;
+	
+}
+
+h2 {
+	font-size: 30px;
+	font-family: 'Lobster', cursive;
+	position: absolute;
+	top: 100px;
+	left: 250px;
+
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+
+}
+
+nav li {
+	display: inline; 
+	/* Topo, direita, baixo, esquerda, em pixels */
+	margin: 0 0 0 15px;
+
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+
+}
+
+nav a:hover {
+
+	color: #C78C19;
+	text-decoration: underline;
+	transition: 0.3s;
+
+
+	/*COR DO TEXTO DIFERENTE DA BORDA 
+
+	color: #C78C19;
+	border: 2px solid black ;
+	padding: 1px;
+	border-radius: 4px;*/
+
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	/*background: #CCCCCC;*/
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border-color: #000000 ;
+	border-width: 2px;
+	border-style: solid;  
+	border-radius: 10px; 
+	
+	/*border-radius: 10px 20px 30px 40px;*/
+	/*border-radius-top-right:10px;
+
+	/*ultimas 3 linhas podem ser-> border: 2px solid #000000*/
+	/* Alternativa correta! Na estrutura de "caixas" do CSS, a borda fica posicionada entre o padding e a margin.*/
+	/*Elementos do CSS se comporta comas caixas: aixa do conteúdo, a caixa do espaçamento interno, a caixa da borda e a caixa do espaçamento externo*/
+}
+
+.produtos li:hover {
+	border-color: #C78C19
+
+}
+
+.produtos li:active {
+	border-color: #088C19
+
+}
+
+.produtos li:hover h3 {
+	font-size: 31px;
+
+  }
+
+.produtos h3 {
+	font-size: 30px;
+	font-weight: bold;
+
+}
+
+
+.produto-descricao {
+	font-size: 18px;
+
+}
+
+
+.produto-preço {
+	font-size: 22px;
+	font-weight: bold;
+	margin: 10px 0 0;
+	/* mesma coisa: margin-top: 10px */
+
+}
+
+footer {
+	text-align:center;
+	background: url("bg.jpg");
+	padding: 40px 0px;
+	color: white;
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+	body {
+		width: 100%;
+
+	}
+
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+	width: auto;
+
+	}
+
+	header {	
+		height: 350px;
+
+	}
+
+	h1 {
+		text-align: center;
+
+	}
+
+	h2 {
+		text-align: center;
+		position: static;
+
+	}
+
+	nav {
+		position: static;
+		margin: 20px 0;
+
+	}
+
+	nav {
+		position: static;
+		text-align: center;
+	
+
+	}
+
+	.produtos {
+		width: 90%;
+		margin: -100 auto;
+
+
+	}
+
+	.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	vertical-align: top;
+	/*background: #CCCCCC;*/
+	margin: 6% 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border-color: #000000 ;
+	border-width: 2px;
+	border-style: solid;  
+	
+	}
+
+
+}
+
