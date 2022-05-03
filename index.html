@@ -3,14 +3,21 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--Zoom da página, quando menor, maior-->
+
 	<title>Yuri Cruz - Front End e Design</title>
 
 	<link rel="icon" type="imagem/jpeg" href="assets/img/logoPequeno.png" />
 
 	<link rel="stylesheet" href="assets/css/reset.css">
+
 	<link rel="stylesheet" href="assets/css/style-home.css">
+	<link rel="stylesheet" href="assets/css/style-sobre.css">
 	<link rel="stylesheet" href="assets/css/style-principal.css">
+	<link rel="stylesheet" href="assets/css/style-contato.css">
+	<link rel="stylesheet" href="assets/css/style-rodape.css">
 
 	<!-- fonte -->
 	<!--
@@ -34,7 +41,7 @@
 			<nav class="cabecalho_navegacao">
 				<ul class="cabecalho_links">
 					<li><a class="cabecalho_itens" href="index.html">Home</a></li>
-					<li><a class="cabecalho_itens" href="#servicos">Servicos</a> </li>
+					<li><a class="cabecalho_itens" href="#servicos_titulo">Servicos</a> </li>
 					<li><a class="cabecalho_itens" href="#contato">Contato</a></li>
 				</ul>
 
@@ -45,16 +52,28 @@
 		<section>
 			<div class="sobre_container" id="sobre">
 				<h2 class="sobre_titulo">Quem sou eu</h2>
-				<p class="sobre_texto typing_animation" id="servicos">Olá! Me chamo Yuri. Sou Freelancer trabalhando em
-					Web-Design,
-					edição de vídeo e fotografias. E amo tudo isso =)</p>
-			</div>
+				<div class="versaoPC">
+					<p class="sobre_texto typing_animation" id="servicos">Olá! Me chamo Yuri. Sou Freelancer
+						trabalhando em
+						Web-Design,
+						edição de vídeo e fotografias. E amo tudo isso =)
+					</p>
+				</div>
+				<div class="versaoMob">
+					<p class="sobre_texto2 typing_animation1" id="servicos">Olá! Me chamo Yuri. Sou Freelancer</p>
+					<p class="sobre_texto3 typing_animation2">trabalhando em
+						Web-Design,</p>
+					<p class="sobre_texto3 typing_animation3">edição de vídeo e fotografias.</p>
+					<p class="sobre_texto3 typing_animation4"> E amo tudo isso =)
+					</p>
+
+				</div>
 		</section>
 
 		<!-- ________________________________________________________________________________________________________________-->
 
 		<section class="princiapl">
-			<h3 id="servicos">Serviços</h3>
+			<h3 id="servicos_titulo">Serviços</h3>
 			<div class="principal_container">
 				<p class="princiapl_servicos__webtitulo">Desenvolvedor FrontEnd - Web Design</p>
 				<div class="principal_conteudoServicos">
@@ -62,12 +81,11 @@
 						alt="Exemplo de layout no tablet">
 					<img class="principal_notebook" src="assets/img/servicoes/notebook2.png"
 						alt="Exemplo de layout no notebook">
-					<img class="principal_cel" src="assets/img/servicoes/cel4.png"
-						alt="Exemplo de layout no celular">
+					<img class="principal_cel" src="assets/img/servicoes/cel4.png" alt="Exemplo de layout no celular">
 
 					<p class="webDesign_texto">Um site é essencial para um negócio, seja ele macro ou micro. É o cartão
 						de
-						visita da emrpesa, se adaptando a vários estilos de tela. Nele o proprietário pode falar sobre
+						visita da empresa, se adaptando a vários estilos de tela. Nele o proprietário pode falar sobre
 						si,
 						indicar seus contatos, mostrar endereço, disponibilizar downloads como e-books, e muito mais.
 						<br> <br>
@@ -75,7 +93,7 @@
 						de tirar proveito do SEO, e aparecer nas pesquisas do google!
 						Trazendo ainda mais autoridade para a marca.
 						81% dos usuários fazem pesquisas online antes de comprar algo.
-						Quer saber mais da importância de ter um site bem estruturado? 
+						Quer saber mais da importância de ter um site bem estruturado?
 						<a href="https://www.conversion.com.br/blog/estatisticas-de-seo/" target="_blank"
 							rel="noopener noreferrer" class="principal_referencia">Tenha acesso a mais dados.</a>
 					</p>
@@ -107,8 +125,7 @@
 			<div class="principal_container">
 				<p class="princiapl_servicos__webtitulo">Edição de vídeo</p>
 				<div class="principal_conteudoServicos">
-					<video class="video" src="assets/img/meuPrimeiroSite.mp4" alt="Exemplo de edição de vídeo"
-						controls>
+					<video class="video" src="assets/img/meuPrimeiroSite.mp4" alt="Exemplo de edição de vídeo" controls>
 					</video>
 					<p class="webDesign_texto">
 						Assim como as imagens, os vídeo são uma ótima maneira de expressar seu produto. Podendo ser uma
@@ -120,37 +137,42 @@
 		</section>
 
 		<!-- ________________________________________________________________________________________________________________-->
+		<section class="callToAction">
+			<p>
+				Posso ajudar em algo, ou tens alguma dúvida? Me manda uma mensagem!
+			</p>
 
+		</section>
 		<form action="php/enviar-email.php" method="POST" class="contato_container">
 			<h4 id="contato">Contato</h4>
 			<div class="contato_texto">
 				<!-- label e input sempre andam juntos -->
 				<label for="nomesobrenome">Nome e Sobrenome</label>
-				<input class="contato_texto__inputs" type="text" id="nomesobrenome" name="nome" class="input-padrao" required="email"
+				<input class="contato_texto__inputs" type="text" id="nomesobrenome" name="nome" required="name"
 					placeholder="Seu nome aqui...">
 
 				<label for="email">Email</label>
-				<input class="contato_texto__inputs" type="email" id="email" name="email" class="input-padrao" required=""
+				<input class="contato_texto__inputs" type="email" id="email" name="email" required
 					placeholder="seuemail@domínio.com">
 
 				<label for="telefone">Telefone</label>
-				<input class="contato_texto__inputs" type="tel" id="telefone" name="telefone" class="input-padrao" required=""
-					placeholder="(DDD) xxxxx-xxxx">
+				<input class="contato_texto__inputs" type="tel" id="telefone" name="telefone" maxlength="18" required
+					placeholder="Seu número" onkeypress="maascaraDeTelefone(this)">
 
 				<label class="mensagem" for="mensagem">Mensagem</label>
-				<textarea class="contato_texto__inputs" cols="80" rows="10" id="mensagem" maxlength="400" placeholder="Mensagem"
-					required=""></textarea>
-				
+				<textarea class="contato_texto__inputs" id="mensagem" maxlength="1000"
+					placeholder="Escreva aqui o que desejas" required=""></textarea>
+
 				<input type="submit" class="enviar" value="Enviar" name="submit" class="submit">
-				
 			</div>
 		</form>
+		
 	</main>
+
 	<!-- ________________________________________________________________________________________________________________-->
 	<footer class="rodape_container">
 		<div class="rodape_conteudo">
-			<img class="logo_yc" src="assets/img/logoPequeno.png" alt="Logo do escritório"
-				title="Logo do escritório">
+			<img class="logo_yc" src="assets/img/logoPequeno.png" alt="Logo do escritório" title="Logo do escritório">
 			<ul class="rodape_lista">
 				<li><a href="https://github.com/YuriCF1" target="_blank" rel="noopener noreferrer"><img class="logo_git"
 							src="assets/img/github.png" alt="Perfil no GitHub"></a></li>
@@ -160,85 +182,7 @@
 		</div>
 		<p class="copyright">&copy; Todos os direitos reservados - 2022</p>
 	</footer>
+	<script src="assets/main.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-<!--
-
-// // CTRL ALT = CURSOe EM VÁRIAS LINHAS
-
-// class Cliente {
-//     nome;
-//     cpf;
-
-// }
-
-// //TODA VEZ QUE TIVER _(UNDERLINE) NA FRENTE DO ATRIBUTO, A COMUNIDADE DIZ Q ELE É PRIVADO = NÃO ACESSE ELE FORA DA CLASSE!
-// //A IDEIA É USAR O #NA FRENTE, PARA ASSIM SER PRIVADO DE VERDADE, MAS AÍ ESTÁ EM CONVERSÃO AINDA => https://github.com/tc39/proposal-class-fields#private-fields
-// class ContaCorrente {
-//     agencia;
-//     _saldo = 0;
-
-//     sacar(valor) {
-//         if (this._saldo >= valor && valor >= 0) {
-//             this._saldo -= valor;
-//             return valor;
-           
-//         }else {
-//             console.log("Saldo insusifiente ou valor inválido")
-
-//         }
-//     }   
-
-// //Técnica Early Return = primeiro se dá as condições erradas, assim o return não vai devolver NADA, para só assim depois autorizar a fazer alguma coisa
-//     depositar(valor){
-//         if(valor <= 0) {
-//             return
-//         };
-
-//         this._saldo += valor;
-//     }
-// }
-
-import {Cliente} from "./Cliente.js";
-import {ContaCorrente} from "./ContaCorrente.js";
-import { ContaPoupança } from "./ContaPoupança.js";
-import {Conta} from "./Conta.js";
-
-const cliente1 = new Cliente("Ricardo", 11122233309);
-const cliente2 = new Cliente("Alice", 88822233309);
-
-const contaCorrente1 = new Conta(400, cliente1, 101);
-
-//Atribuindo as instâncias de CLIENTE forma direta
-//conta2.cliente = null(); (se eu quiser não atribuir nenhum valor ao cliente)
-//nulo é diferente de undifined, o NULL é intencional, explícito 
-
-// const conta2 = new ContaCorrente();
-// conta2.cliente = new Cliente();
-// conta2.cliente.nome = "Alice"
-
-const contaCorrente2 = new Conta(102, cliente2);
-
-//let valor = 13
-//Se eu atribuir um valor aqui, mesmo que eu atribua outra variáel com esse nome lá no arquivo de operação da conta, não vai alterar. Já que eu mandei a cópia do valor. Já se eu alterar algo na 'conta', vai mudar já que ela é uma referência do OBJETO.
-
-
-//se eu quiser saber só um dado, como por exemplo o numero de contas
-//console.log(ContaCorrente.numeroDeContas)
-
-const ContaPoupança1 = new Conta(50, cliente1, 101);
-
-console.log(contaCorrente1);
-console.log(ContaPoupança1);
