@@ -1,76 +1,5 @@
-.main {
-	background: linear-gradient(#0e0b16, #262429);
-	/*background-image: url(../img/codigos.jpg);*/
-	background-size: cover;
-	padding: 2rem 0;
 
-
-}
-
-.sobre_container {
-	color: rgb(255, 255, 255);
-	text-align: center;
-	width: 80vw;
-	font-size: 1.42rem;
-	margin: 2rem auto;
-	line-height: 2.6rem;
-	height: 32vh;
-
-
-}
-
-.sobre_titulo {
-	color: #FDFDFD;
-	text-align: center;
-	font-size: 2.6rem;
-	margin: 1rem 0 3rem 0;
-	padding-top: 3rem;
-
-}
-
-
-.sobre_texto {
-	display: inline-block;
-	line-height: 1.6rem;
-	border-right: 2px solid rgba(255, 255, 255, 0.75);
-	overflow: hidden;
-	white-space: nowrap;
-	font-size: 1.6rem;
-
-}
-
-.typing_animation {
-	animation: piscaCursor 900ms infinite normal, apareceTexto 5s steps(100) 1s normal both;
-
-}
-
-@keyframes apareceTexto {
-
-	from {
-		width: 0;
-
-	}
-
-	to {
-		width: 72.3rem;
-
-
-	}
-
-}
-
-@keyframes piscaCursor {
-	from {
-		border-right-color: 2px solid rgba(255, 255, 255, 0.75);
-	}
-
-	to {
-		border-right-color: transparent;
-
-	}
-
-}
-
+/*___________________________________________________________________________________*/
 .princiapl {
 	width: 80vw;
 	color: #f5ecfb;
@@ -166,111 +95,53 @@
 
 }
 
-/*_____________________________________________CONTATO________________________*/
+@media screen and (max-width: 500px) {
+    .princiapl {
+        font-size: 2rem;
+        margin: 20rem auto;
+        margin-bottom: 2rem;
 
-.contato_container {
-	width: 80vw;
-	color: #f5ecfb;
-	font-size: 2.5rem;
-	text-align: center;
-	margin: 2rem auto;
-	
+    }
 
+    .principal_conteudoServicos {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .principal_tablet {
+        height: 6.5rem;
+        margin: 1rem;
+    }
+    
+    .principal_notebook {
+        height: 8rem;
+        margin: 1rem;
+    
+    }
+    
+    .principal_cel {
+        height: 4rem;
+        margin: 1rem;
+    }
+
+    .webDesign_texto {
+        margin: 2rem auto;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .exemplo1 {
+        margin-bottom: 3rem;
+
+    }
+
+    .video {
+        box-shadow: 3px 20px 30px #000000;
+        height: auto;
+        width: 100vw;
+    }
+    
 }
-
-.contato_texto {
-	font-size: 1.5rem;
-	margin: 2rem auto;	
-	
-}
-
-.enviar {
-	cursor: pointer;
-	display: block;
-}
-
-.contato_texto__inputs {
-	color: #f5ecfb;
-	border-radius: 10px;
-	border-style: none;
-	box-sizing: border-box;
-	padding: .45rem;
-	font-size: 1.2rem;
-	margin-top: 1rem;
-	margin-right: 2.3rem;
-	background-color: #353536;
-}
-
-.contato_texto:nth-last-child(2),textarea {
-	margin-right: 0;
-
-}
-
-.enviar {
-	color: #f5ecfb;
-	border-radius: 10px;
-	border-style: none;
-	box-sizing: border-box;
-	padding: .7rem;
-	font-size: 1.2rem;
-	margin: 1rem auto;
-	align-items: center;
-	background-color: #353536;
-
-}
-
-.mensagem {
-	margin: 1.5rem 0 0.5rem 0;
-	display: block;
-}
-
-
-
-/*______________________________________________Rodape______________________ */
-.rodape_container {
-	background-color: #262429;
-	padding: 2rem 2rem; 
-    color: #f5ecfb;
-    text-align: center;
-    font-size: 1rem;
-    box-shadow: inset 0 0 12rem #403f41;
-}
-
-.rodape_conteudo {
-	align-self: center;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-
-}
-
-.rodape_lista {
-	padding: 0rem 2rem;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-
-}
-
-.rodape_lista > li {
-	margin: 1rem 1rem;
-
-}
-
-.logo_yc{
-	height: 7rem;
-
-}
-
-
-.logo_git {
-	height: 3.5rem;
-
-}
-
-.copyright {
-	margin: 1rem;
-
-}
-
-
