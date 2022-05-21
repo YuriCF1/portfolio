@@ -21,8 +21,8 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 <table>
   <tr>
     <td align="center">
-      <a href="#">
-        <img src="https://github.com/YuriCF1/YuriCF1/blob/main/99689063.jpg" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+      <a href="https://www.linkedin.com/in/yf19/">
+        <img src="https://github.com/YuriCF1/YuriCF1/blob/main/99689063.jpg" width="100px;" alt="Foto do Yuri Cruz no GitHub"/><br>
         <sub>
           <b>Yuri Cruz</b>
         </sub>
