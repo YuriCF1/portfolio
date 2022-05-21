@@ -10,7 +10,7 @@ Site feito para apresentação de serviço em carreira freelanceer
 ## Linguagens
 - HTML
 - CSS
-- PHP (Enviar email decontato)
+- PHP (Enviar email de contato)
 
 <img src="https://raw.githubusercontent.com/YuriCF1/portfolio/main/assets/Portfolio.png" alt="imagem do site">
 
