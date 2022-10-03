@@ -39,7 +39,7 @@
 }
 
 .typing_animation {
-	animation: piscaCursor 900ms infinite normal, apareceTexto 5.5s steps(100) 1s normal both;
+	animation: piscaCursor 900ms infinite normal, apareceTexto 5.5s steps(100) 1.5s normal both;
 
 }
 

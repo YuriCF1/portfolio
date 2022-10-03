@@ -1,193 +1,232 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!--Zoom da página, quando menor, maior-->
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--Zoom da página, quando menor, maior-->
 
-	<title>Yuri Cruz - Front End e Design</title>
+		<title>Yuri Cruz - Front End e Design</title>
 
-	<link rel="icon" type="imagem/jpeg" href="assets/img/logoPequeno.png" />
+		<link rel="icon" type="imagem/jpeg" href="assets/img/logoPequeno.png" />
 
-	<link rel="stylesheet" href="assets/css/reset.css">
+		<link rel="stylesheet" href="assets/css/reset.css">
 
-	<link rel="stylesheet" href="assets/css/style-home.css">
-	<link rel="stylesheet" href="assets/css/style-sobre.css">
-	<link rel="stylesheet" href="assets/css/style-principal.css">
-	<link rel="stylesheet" href="assets/css/style-contato.css">
-	<link rel="stylesheet" href="assets/css/style-rodape.css">
+		<link rel="stylesheet" href="assets/css/style-home.css">
+		<link rel="stylesheet" href="assets/css/style-sobre.css">
+		<link rel="stylesheet" href="assets/css/style-principal.css">
+		<link rel="stylesheet" href="assets/css/style-contato.css">
+		<link rel="stylesheet" href="assets/css/style-rodape.css">
 
-	<!-- fonte -->
-	<!--
+		<!-- fonte -->
+		<!--
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet"> 
 	-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"
+			rel="stylesheet">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+		<!-- Animation -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	</head>
 
-</head>
+	<body>
+		<header>
+			<div class="cabecalho_container">
+				<h1> <img src="assets/img/logo5.png" title="Logo da escritório" alt="Logo do
+						escritório"
+						class="cabecalho_logo">
+				</h1>
+				<nav class="cabecalho_navegacao">
+					<ul class="cabecalho_links">
+						<li><a class="cabecalho_itens" href="index.html">Home</a></li>
+						<li><a class="cabecalho_itens" href="#servicos_titulo">Servicos</a> </li>
+						<li><a class="cabecalho_itens" href="#contato">Contato</a></li>
+					</ul>
 
-<body>
-	<header>
-		<div class="cabecalho_container">
-			<h1> <img src="assets/img/logo5.png" title="Logo da escritório" alt="Logo do escritório"
-					class="cabecalho_logo">
-			</h1>
-			<nav class="cabecalho_navegacao">
-				<ul class="cabecalho_links">
-					<li><a class="cabecalho_itens" href="index.html">Home</a></li>
-					<li><a class="cabecalho_itens" href="#servicos_titulo">Servicos</a> </li>
-					<li><a class="cabecalho_itens" href="#contato">Contato</a></li>
-				</ul>
-
-			</nav>
-		</div>
-	</header>
-	<main class="main">
-		<section>
-			<div class="sobre_container" id="sobre">
-				<h2 class="sobre_titulo">Quem sou eu</h2>
-				<div class="versaoPC">
-					<p class="sobre_texto typing_animation" id="servicos">Olá! Me chamo Yuri. Sou Freelancer
-						trabalhando em
-						Web-Design,
-						edição de vídeo e fotografias. E amo tudo isso =)
-					</p>
-				</div>
-				<div class="versaoMob">
-					<p class="sobre_texto2 typing_animation1" id="servicos">Olá! Me chamo Yuri. Sou Freelancer</p>
-					<p class="sobre_texto3 typing_animation2">trabalhando em
-						Web-Design,</p>
-					<p class="sobre_texto3 typing_animation3">edição de vídeo e fotografias.</p>
-					<p class="sobre_texto3 typing_animation4"> E amo tudo isso =)
-					</p>
-
-				</div>
-		</section>
-
-		<!-- ________________________________________________________________________________________________________________-->
-
-		<section class="princiapl">
-			<h3 id="servicos_titulo">Serviços</h3>
-			<div class="principal_container">
-				<p class="princiapl_servicos__webtitulo">Desenvolvedor FrontEnd - Web Design</p>
-				<div class="principal_conteudoServicos">
-					<img class="principal_tablet" src="assets/img/servicoes/tablet.png"
-						alt="Exemplo de layout no tablet">
-					<img class="principal_notebook" src="assets/img/servicoes/notebook2.png"
-						alt="Exemplo de layout no notebook">
-					<img class="principal_cel" src="assets/img/servicoes/cel4.png" alt="Exemplo de layout no celular">
-
-					<p class="webDesign_texto">Um site é essencial para um negócio, seja ele macro ou micro. É o cartão
-						de
-						visita da empresa, se adaptando a vários estilos de tela. Nele o proprietário pode falar sobre
-						si,
-						indicar seus contatos, mostrar endereço, disponibilizar downloads como e-books, e muito mais.
-						<br> <br>
-						Além
-						de tirar proveito do SEO, e aparecer nas pesquisas do google!
-						Trazendo ainda mais autoridade para a marca.
-						81% dos usuários fazem pesquisas online antes de comprar algo.
-						Quer saber mais da importância de ter um site bem estruturado?
-						<a href="https://www.conversion.com.br/blog/estatisticas-de-seo/" target="_blank"
-							rel="noopener noreferrer" class="principal_referencia">Tenha acesso a mais dados.</a>
-					</p>
-
-				</div>
+				</nav>
 			</div>
+		</header>
+		<main class="main">
+			<div data-aos="zoom-in" data-aos-duration="500">
+				<section>
+					<div class="sobre_container" id="sobre">
+						<h2 class="sobre_titulo">Quem sou eu</h2>
+						<div class="versaoPC">
+							<p class="sobre_texto typing_animation" id="servicos">Olá! Me chamo Yuri.
+								Sou Freelancer
+								trabalhando em
+								Web-Design,
+								edição de vídeo e fotografias. E amo tudo isso =)
+							</p>
+						</div>
+						<div class="versaoMob">
+							<p class="sobre_texto2 typing_animation1" id="servicos">Olá! Me chamo
+								Yuri. Sou Freelancer</p>
+							<p class="sobre_texto3 typing_animation2">trabalhando em
+								Web-Design,</p>
+							<p class="sobre_texto3 typing_animation3">edição de vídeo e fotografias.</p>
+							<p class="sobre_texto3 typing_animation4"> E amo tudo isso =)
+							</p>
 
-			<!-- _________________________________________________-->
+						</div>
+					</div>
+					</div>
+				</section>
 
-			<div class="principal_container">
-				<p class="princiapl_servicos__webtitulo">Design Gráfico</p>
-				<div class="principal_conteudoServicos">
-					<img class="exemplo1" src="assets/img/exemplo1.png" alt="Exemplo de layout no tablet">
-					<img class="exemplo2" src="assets/img/exemplo2.png" alt="Exemplo de layout no notebook">
+				<!-- ________________________________________________________________________________________________________________-->
+				<section class="princiapl">
+					<!-- Animation -->
+					<div data-aos="fade-right" data-aos-duration="2000">
+						<h3 id="servicos_titulo">Serviços</h3>
+						<div class="principal_container">
+							<p class="princiapl_servicos__webtitulo">Desenvolvedor FrontEnd - Web
+								Design</p>
+							<div class="principal_conteudoServicos">
+								<img class="principal_tablet" src="assets/img/servicoes/tablet.png"
+									alt="Exemplo de layout no tablet">
+								<img class="principal_notebook" src="assets/img/servicoes/notebook2.png"
+									alt="Exemplo de layout no notebook">
+								<img class="principal_cel" src="assets/img/servicoes/cel4.png"
+									alt="Exemplo de layout no celular">
 
-					<p class="webDesign_texto">
-						Algo muito importante para um site, é a composição em seu design. As formas usadas, a paleta de
-						cores, os efeitos apresentados... <br> <br>
-						Tudo isso passa diversas mensagens para o usuários. Tal arte pode ser produzida fazendo parte de
-						uma composição maior, ou apenas isoldamente
-						sendo algum pedido mais isolado.
-					</p>
+								<p class="webDesign_texto">Um site é essencial para um negócio, seja ele
+									macro ou micro. É o cartão
+									de
+									visita da empresa, se adaptando a vários estilos de tela. Nele o
+									proprietário pode falar sobre
+									si,
+									indicar seus contatos, mostrar endereço, disponibilizar downloads como
+									e-books, e muito mais.
+									<br> <br>
+									Além
+									de tirar proveito do SEO, e aparecer nas pesquisas do google!
+									Trazendo ainda mais autoridade para a marca.
+									81% dos usuários fazem pesquisas online antes de comprar algo.
+									Quer saber mais da importância de ter um site bem estruturado?
+									<a href="https://www.conversion.com.br/blog/estatisticas-de-seo/"
+										target="_blank"
+										rel="noopener noreferrer" class="principal_referencia">Tenha acesso a
+										mais dados.</a>
+								</p>
 
+							</div>
+						</div>
+					</div>
+					<!-- _________________________________________________-->
+
+					<div data-aos="fade-left" data-aos-duration="1500">
+						<div class="principal_container">
+							<p class="princiapl_servicos__webtitulo">Design Gráfico</p>
+							<div class="principal_conteudoServicos">
+								<img class="exemplo1" src="assets/img/exemplo1.png" alt="Exemplo de
+									layout no tablet">
+								<img class="exemplo2" src="assets/img/exemplo2.png" alt="Exemplo de
+									layout no notebook">
+
+								<p class="webDesign_texto">
+									Algo muito importante para um site, é a composição em seu design. As
+									formas usadas, a paleta de
+									cores, os efeitos apresentados... <br> <br>
+									Tudo isso passa diversas mensagens para o usuários. Tal arte pode ser
+									produzida fazendo parte de
+									uma composição maior, ou apenas isoldamente
+									sendo algum pedido mais isolado.
+								</p>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- _______________________________________________-->
+					<div data-aos="fade-down" data-aos-duration="1500">
+						<div class="principal_container">
+							<p class="princiapl_servicos__webtitulo">Edição de vídeo</p>
+							<div class="principal_conteudoServicos">
+								<video class="video" src="assets/img/meuPrimeiroSite.mp4" alt="Exemplo
+									de
+									edição de vídeo" controls>
+								</video>
+								<p class="webDesign_texto">
+									Assim como as imagens, os vídeo são uma ótima maneira de expressar seu
+									produto. Podendo ser uma
+									apresentação do site, um tutorial ou a edição do seu produto de
+									entretenimento.
+								</p>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- ________________________________________________________________________________________________________________-->
+				<div data-aos="fade-up" data-aos-duration="1000">
+					<section class="callToAction">
+						<p>
+							Posso ajudar em algo, ou tens alguma dúvida? Me manda uma mensagem!
+						</p>
+
+					</section>
+					<form action="php/enviar-email.php" method="POST"
+						class="contato_container">
+						<h4 id="contato">Contato</h4>
+						<div class="contato_texto">
+							<!-- label e input sempre andam juntos -->
+							<label for="nomesobrenome">Nome e Sobrenome</label>
+							<input class="contato_texto__inputs" type="text" id="nomesobrenome"
+								name="nome" required="name"
+								placeholder="Seu nome aqui...">
+
+							<label for="email">Email</label>
+							<input class="contato_texto__inputs" type="email" id="email" name="email"
+								required
+								placeholder="seuemail@domínio.com">
+
+							<label for="telefone">Telefone</label>
+							<input class="contato_texto__inputs" type="tel" id="telefone"
+								name="telefone" maxlength="18" required
+								placeholder="Seu número" onkeypress="maascaraDeTelefone(this)">
+
+							<label class="mensagem" for="mensagem">Mensagem</label>
+							<textarea class="contato_texto__inputs" id="mensagem" maxlength="1000"
+								placeholder="Escreva aqui o que desejas" required=""></textarea>
+
+							<input type="submit" class="enviar" value="Enviar" name="submit"
+								class="submit">
+						</div>
+					</form>
 				</div>
-			</div>
 
-			<!-- _______________________________________________-->
+			</main>
 
-			<div class="principal_container">
-				<p class="princiapl_servicos__webtitulo">Edição de vídeo</p>
-				<div class="principal_conteudoServicos">
-					<video class="video" src="assets/img/meuPrimeiroSite.mp4" alt="Exemplo de edição de vídeo" controls>
-					</video>
-					<p class="webDesign_texto">
-						Assim como as imagens, os vídeo são uma ótima maneira de expressar seu produto. Podendo ser uma
-						apresentação do site, um tutorial ou a edição do seu produto de entretenimento.
-					</p>
-
+			<!-- ________________________________________________________________________________________________________________-->
+			<footer class="rodape_container">
+				<div class="rodape_conteudo">
+					<img class="logo_yc" src="assets/img/logoPequeno.png" alt="Logo do
+						escritório" title="Logo do escritório">
+					<ul class="rodape_lista">
+						<li><a href="https://github.com/YuriCF1" target="_blank" rel="noopener
+								noreferrer"><img class="logo_git"
+									src="assets/img/github.png" alt="Perfil no GitHub"></a></li>
+						<li><a href="https://www.linkedin.com/in/yf19/" target="_blank"
+								rel="noopener noreferrer"><img
+									class="logo_git" src="assets/img/linkedin.png" alt="Perfil no GitHub"></a></li>
+					</ul>
 				</div>
-			</div>
-		</section>
+				<p class="copyright">&copy; Todos os direitos reservados - 2022</p>
+			</footer>
+			<script src="assets/main.js"></script>
+			<!-- Animation -->
+			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+			<script>AOS.init();</script>
+		</body>
+	</html>
 
-		<!-- ________________________________________________________________________________________________________________-->
-		<section class="callToAction">
-			<p>
-				Posso ajudar em algo, ou tens alguma dúvida? Me manda uma mensagem!
-			</p>
-
-		</section>
-		<form action="php/enviar-email.php" method="POST" class="contato_container">
-			<h4 id="contato">Contato</h4>
-			<div class="contato_texto">
-				<!-- label e input sempre andam juntos -->
-				<label for="nomesobrenome">Nome e Sobrenome</label>
-				<input class="contato_texto__inputs" type="text" id="nomesobrenome" name="nome" required="name"
-					placeholder="Seu nome aqui...">
-
-				<label for="email">Email</label>
-				<input class="contato_texto__inputs" type="email" id="email" name="email" required
-					placeholder="seuemail@domínio.com">
-
-				<label for="telefone">Telefone</label>
-				<input class="contato_texto__inputs" type="tel" id="telefone" name="telefone" maxlength="18" required
-					placeholder="Seu número" onkeypress="maascaraDeTelefone(this)">
-
-				<label class="mensagem" for="mensagem">Mensagem</label>
-				<textarea class="contato_texto__inputs" id="mensagem" maxlength="1000"
-					placeholder="Escreva aqui o que desejas" required=""></textarea>
-
-				<input type="submit" class="enviar" value="Enviar" name="submit" class="submit">
-			</div>
-		</form>
-		
-	</main>
-
-	<!-- ________________________________________________________________________________________________________________-->
-	<footer class="rodape_container">
-		<div class="rodape_conteudo">
-			<img class="logo_yc" src="assets/img/logoPequeno.png" alt="Logo do escritório" title="Logo do escritório">
-			<ul class="rodape_lista">
-				<li><a href="https://github.com/YuriCF1" target="_blank" rel="noopener noreferrer"><img class="logo_git"
-							src="assets/img/github.png" alt="Perfil no GitHub"></a></li>
-				<li><a href="https://www.linkedin.com/in/yf19/" target="_blank" rel="noopener noreferrer"><img
-							class="logo_git" src="assets/img/linkedin.png" alt="Perfil no GitHub"></a></li>
-			</ul>
-		</div>
-		<p class="copyright">&copy; Todos os direitos reservados - 2022</p>
-	</footer>
-	<script src="assets/main.js"></script>
-</body>
-
-</html>
-
-<!--
+	<!--
 
 // // CTRL ALT = CURSOe EM VÁRIAS LINHAS
 
