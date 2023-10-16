@@ -14,6 +14,8 @@ Site feito para apresentação de serviço em carreira freelanceer
 
 <img src="https://raw.githubusercontent.com/YuriCF1/portfolio/main/assets/Portfolio.png" alt="imagem do site">
 
+## Deploy do site: https://yuricf1.github.io/portfolio/
+
 ### Ajustes e melhorias
 
 O projeto está em constante desenvolvimento de acordo com o aprendizado do desenvolver, proprietário do perfil:
